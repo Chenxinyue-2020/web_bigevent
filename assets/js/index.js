@@ -1,6 +1,6 @@
 $(function () {
     // 调用 getUaerInfo 获取用户基本信息
-    getUaerInfo();
+    getUserInfo();
 
     var layer = layui.layer;
     // 点击按钮实现退出功能
@@ -21,7 +21,7 @@ $(function () {
 })
 
 // 获取用户的基本信息
-function getUaerInfo() {
+function getUserInfo() {
     $.ajax({
         method: 'GET',
         url: '/my/userinfo',
